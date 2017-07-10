@@ -6,7 +6,7 @@ To import the data you need to:
 * `bundle install`
 * Create a database in postgres
 * Edit `config/database.yml` to give access to the database you created
-* Migrate the database - `bundle exec rake db:migrate`
+* Create the database - `bundle exec rake db:schema:load`
 * Download `munros-data.sql` from here: https://gist.github.com/mhl/a88a77b850ca0f5c9d65cc907a2d884f
 * Import that data with: `bundle exec rails dbconsole < munros-data.sql`
 * Run the server with: `bundle exec rails s`
